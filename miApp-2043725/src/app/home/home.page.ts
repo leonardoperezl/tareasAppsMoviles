@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
-import { BotonComponent } from '../boton/boton.component';
+import { GridComponent } from '../grid/grid.component';
+import { IonContent } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, BotonComponent],
+  imports: [IonContent, GridComponent],
 })
 export class HomePage {
   mensaje: string = "Hola mundo!"
