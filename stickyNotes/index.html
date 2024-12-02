@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Sticky Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>MY STICKY NOTES</h1>
+    <div id="notesContainer" class="notesContainer">
+        <div id="newNote" class="note">
+            <p class="noteText"></p>
+        </div>
+    </div>
+    <div class="noteCreator">
+        <input id="newNoteInput" type="text" placeholder="Remind me of ...">
+        <button class="addNote" onclick="createNewNote()">Add note</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

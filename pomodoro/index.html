@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Pomodoro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link id="themeStylesheet" rel="stylesheet" href="styles.css" />
+    </head>
+    <body id="body" class="body--pomodoro">
+        <div id="container" class="container--pomodoro">
+            <div id="container_modeButtons" class="container__modeButtons">
+                <span id="pomodoroButton" class="container__modeButtons-pButton--pomodoro" onclick="change_color_pomodoro('pomodoro')">POMODORO</span>
+                <span id="breakButton" class="container__modeButtons-bButton--pomodoro" onclick="change_color_pomodoro('break')">DESCANSO</span>
+            </div>
+            <div class="container__timer">
+                25:00
+            </div>
+            <div class="container__timeButtons">
+                <button id="startButton" class="container__timeButtons-iButton--pomodoro" id="startButton">
+                    INICIAR
+                </button>
+                <button id="resetButton" class="container__timeButtons-rButton--pomodoro" id="resetButton">
+                    RESET
+                </button>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
